@@ -113,26 +113,29 @@
 
     <section class="section" id="estimate">
       <div class="wrap">
-        <div class="section-head reveal"><div><div class="eyebrow">07 / Project estimator</div><h2>Build an initial estimate.</h2></div><p>Choose the essentials to get an indicative starting range. A final quote follows a requirements discussion.</p></div>
+        <div class="section-head reveal"><div><div class="eyebrow">07 / Project estimator</div><h2>Build an initial estimate.</h2></div><p>Choose advanced functionality and delivery speed. Ordinary items such as photos, galleries and visual styling do not add feature charges.</p></div>
         <div class="calculator reveal">
-          <div class="calc-intro"><div class="eyebrow">Project planner / 01</div><h3>Your idea.<br>Your requirements.</h3><p>This quick estimator is a planning aid, not a binding quote. Select what you expect your website to include.</p><p>Need something unusual? Include it in your enquiry and we'll review it separately.</p></div>
+          <div class="calc-intro"><div class="eyebrow">Project planner / 01</div><h3>Your idea.<br>Your requirements.</h3><p>The base website starts at ₹4,999. Only selected special features add to the estimate. Feature timelines are indicative; the final plan depends on integrations and project scope.</p><p>Need something unusual? Include it in your enquiry and we'll review it separately.</p></div>
           <form class="calc-form" id="estimateForm">
-            <div class="field"><label for="kind">Business / project type</label><select id="kind"><option value="business">Business / corporate</option><option value="portfolio">Portfolio / personal</option><option value="hospitality">Hospitality / restaurant</option><option value="wellness">Healthcare / wellness</option><option value="education">Education</option><option value="store">Online store</option><option value="other">Other</option></select></div>
-            <div class="field"><label for="pages">Number of pages</label><select id="pages"><option value="5">Up to 5</option><option value="8">6–8</option><option value="12">9–12</option><option value="16">13–16</option><option value="20">More than 16</option></select></div>
-            <div class="field"><label for="design">Design direction</label><select id="design"><option value="0">Clean / professional</option><option value="1500">Premium / highly visual</option><option value="3000">Highly custom experience</option></select></div>
-            <div class="field"><label for="content">Content support</label><select id="content"><option value="0">I will provide content</option><option value="1000">Help with text and structure</option><option value="2000">Text plus image sourcing</option></select></div>
-            <div class="field full"><label>Additional features</label><div class="checks">
-              <label><input type="checkbox" value="1000"> Photo / video gallery</label>
-              <label><input type="checkbox" value="1500"> Blog / news section</label>
-              <label><input type="checkbox" value="2500"> Product catalogue</label>
-              <label><input type="checkbox" value="3500"> Booking / appointments</label>
-              <label><input type="checkbox" value="5000"> Online payment integration</label>
-              <label><input type="checkbox" value="5000"> Customer login / accounts</label>
-              <label><input type="checkbox" value="6000"> Admin dashboard</label>
-              <label><input type="checkbox" value="3000"> Additional language</label>
+            <div class="field"><label for="kind">Project category</label><select id="kind"><option>Business / corporate</option><option>Online store</option><option>Healthcare / wellness</option><option>Education</option><option>Hospitality</option><option>Custom web application</option><option>Other</option></select></div>
+            <div class="field"><label for="pages">Website size</label><select id="pages"><option value="0">Up to 5 pages</option><option value="900">6–10 pages (+₹900)</option><option value="1800">11–15 pages (+₹1,800)</option><option value="3000">16–25 pages (+₹3,000)</option></select></div>
+            <div class="field full"><label>Special features only — select what the project actually needs</label><div class="checks">
+              <label><input type="checkbox" data-price="2500" data-days="4"> AI website assistant — ₹2,500 · 4 days</label>
+              <label><input type="checkbox" data-price="2500" data-days="4"> Smart booking & calendar — ₹2,500 · 4 days</label>
+              <label><input type="checkbox" data-price="3000" data-days="5"> Live order tracking — ₹3,000 · 5 days</label>
+              <label><input type="checkbox" data-price="3500" data-days="6"> Customer account portal — ₹3,500 · 6 days</label>
+              <label><input type="checkbox" data-price="3500" data-days="6"> Admin dashboard & analytics — ₹3,500 · 6 days</label>
+              <label><input type="checkbox" data-price="2000" data-days="3"> Inventory & low-stock alerts — ₹2,000 · 3 days</label>
+              <label><input type="checkbox" data-price="1500" data-days="2"> Advanced search & filters — ₹1,500 · 2 days</label>
+              <label><input type="checkbox" data-price="1500" data-days="2"> Multi-language switcher — ₹1,500 · 2 days</label>
+              <label><input type="checkbox" data-price="1500" data-days="2"> QR-based product information — ₹1,500 · 2 days</label>
+              <label><input type="checkbox" data-price="1500" data-days="2"> Automated email notifications — ₹1,500 · 2 days</label>
+              <label><input type="checkbox" data-price="2500" data-days="3"> Staff roles & permissions — ₹2,500 · 3 days</label>
+              <label><input type="checkbox" data-price="2500" data-days="3"> Interactive quote / price builder — ₹2,500 · 3 days</label>
             </div></div>
-            <div class="field full"><label for="notes">Anything else? (optional)</label><textarea id="notes" rows="3" placeholder="Describe any special features or requirements..."></textarea></div>
-            <div class="estimate"><div><span>Indicative project estimate</span><strong id="estimateValue">₹4,999+</strong><span id="estimateNote">Starting estimate; final quote after review.</span></div><button class="btn" type="submit">SEND ENQUIRY ↗</button></div>
+            <div class="field"><label for="speed">Delivery schedule</label><select id="speed"><option value="1" data-label="Standard / normal timeline">Standard — normal timeline (no extra charge)</option><option value="1.3" data-label="Fast-track delivery">Fast-track — shorter timeline (+30%)</option><option value="1.6" data-label="Urgent delivery">Urgent — priority timeline (+60%)</option><option value="1" data-label="Flexible timeline">Flexible — extra time, normal price</option></select></div>
+            <div class="field"><label for="notes">Special requirements (optional)</label><textarea id="notes" rows="3" placeholder="Describe any other advanced feature..."></textarea></div>
+            <div class="estimate"><div><span>Indicative project estimate</span><strong id="estimateValue">₹4,999</strong><span id="estimateNote">Estimated build time: about 7 working days.</span></div><button class="btn" type="submit">SEND ENQUIRY ↗</button></div>
           </form>
         </div>
       </div>
@@ -185,9 +188,9 @@
     const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});
     document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
     const form=document.getElementById('estimateForm'),valueEl=document.getElementById('estimateValue');
-    function estimate(){let total=4999;const pages=Number(document.getElementById('pages').value);total+=Math.max(0,pages-5)*450;total+=Number(document.getElementById('design').value);total+=Number(document.getElementById('content').value);form.querySelectorAll('input[type=checkbox]:checked').forEach(c=>total+=Number(c.value));valueEl.textContent='₹'+total.toLocaleString('en-IN')+'+';return total;}
+    function estimate(){const base=4999;let subtotal=base+Number(document.getElementById('pages').value);let extraDays=0;const selected=[...form.querySelectorAll('input[type=checkbox]:checked')];selected.forEach(item=>{subtotal+=Number(item.dataset.price);extraDays+=Number(item.dataset.days);});const speed=document.getElementById('speed');const multiplier=Number(speed.value);const total=Math.round(subtotal*multiplier/100)*100;const days=7+extraDays;const factor=multiplier===1.6?.65:multiplier===1.3?.8:1;const delivery=Math.max(3,Math.ceil(days*factor));valueEl.textContent='₹'+total.toLocaleString('en-IN');document.getElementById('estimateNote').textContent='Estimated delivery: about '+delivery+' working days. '+(multiplier>1?'Includes faster-delivery charge.':'Normal pricing.');return {total,days:delivery,selected,speed:speed.selectedOptions[0].text};}
     form.addEventListener('change',estimate);
-    form.addEventListener('submit',e=>{e.preventDefault();const total=estimate();const checked=[...form.querySelectorAll('input[type=checkbox]:checked')].map(x=>x.parentElement.textContent.trim());const subject=encodeURIComponent('Website project enquiry — Captain 715 Universe');const body=encodeURIComponent('Hello Captain 715 Universe,\n\nI would like to discuss a website project.\n\nProject type: '+document.getElementById('kind').selectedOptions[0].text+'\nPages: '+document.getElementById('pages').selectedOptions[0].text+'\nDesign: '+document.getElementById('design').selectedOptions[0].text+'\nContent: '+document.getElementById('content').selectedOptions[0].text+'\nFeatures: '+(checked.join(', ')||'None selected')+'\nAdditional requirements: '+(document.getElementById('notes').value||'Not specified')+'\nIndicative estimate: ₹'+total.toLocaleString('en-IN')+'+\n\nPlease contact me to discuss the final scope and quote.');window.location.href='mailto:Captain715.Universe@gmail.com?subject='+subject+'&body='+body;});
+    form.addEventListener('submit',e=>{e.preventDefault();const result=estimate();const checked=result.selected.map(x=>x.parentElement.textContent.trim());const subject=encodeURIComponent('Website project enquiry — Captain 715 Universe');const body=encodeURIComponent('Hello Captain 715 Universe,\n\nI would like to discuss a website project.\n\nProject type: '+document.getElementById('kind').selectedOptions[0].text+'\nWebsite size: '+document.getElementById('pages').selectedOptions[0].text+'\nSpecial features: '+(checked.join(', ')||'No special features selected')+'\nDelivery schedule: '+result.speed+'\nEstimated time: '+result.days+' working days\nOther requirements: '+(document.getElementById('notes').value||'Not specified')+'\nIndicative estimate: ₹'+result.total.toLocaleString('en-IN')+'\n\nPlease contact me to confirm the scope, timeline and final quote.');window.location.href='mailto:Captain715.Universe@gmail.com?subject='+subject+'&body='+body;});
     estimate();
   </script>
 </body>
