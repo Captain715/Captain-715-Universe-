@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#08090b">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Captain 715">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="icon" type="image/svg+xml" href="./icons/icon-192.svg">
   <meta name="description" content="Captain 715 Universe creates distinctive, responsive websites and digital experiences for businesses and ambitious ideas.">
   <title>CAPTAIN 715 UNIVERSE — Beyond the Digital Horizon</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -197,6 +203,11 @@
     form.addEventListener('change',estimate);
     form.addEventListener('submit',e=>{e.preventDefault();const result=estimate();const checked=result.selected.map(x=>x.parentElement.textContent.trim());const subject=encodeURIComponent('Website project enquiry — Captain 715 Universe');const body=encodeURIComponent('Hello Captain 715 Universe,\n\nI would like to discuss a website project.\n\nProject type: '+document.getElementById('kind').selectedOptions[0].text+'\nWebsite size: '+document.getElementById('pages').selectedOptions[0].text+'\nSpecial features: '+(checked.join(', ')||'No special features selected')+'\nDelivery schedule: '+result.speed+'\nEstimated time: '+result.days+' working days\nOther requirements: '+(document.getElementById('notes').value||'Not specified')+'\nIndicative estimate: ₹'+result.total.toLocaleString('en-IN')+'\n\nPlease contact me to confirm the scope, timeline and final quote.');window.location.href='mailto:Captain715.Universe@gmail.com?subject='+subject+'&body='+body;});
     estimate();
+    if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js").catch(error => console.error("App offline setup failed:", error));
+      });
+    }
   </script>
 </body>
 </html>
