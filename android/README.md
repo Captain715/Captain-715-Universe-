@@ -1,0 +1,1 @@
+Android app source for Captain 715 Universe. See [build instructions](../ANDROID-APP.md).
